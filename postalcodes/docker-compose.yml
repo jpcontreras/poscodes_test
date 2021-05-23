@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+  sqliteweb:
+    image: tomdesinto/sqliteweb
+    ports:
+      - 8080:8080
+    volumes:
+      - ./config/miaguila.db:/db/miaguila.db
+    command: miaguila.db
