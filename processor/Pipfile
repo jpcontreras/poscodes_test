@@ -4,11 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = ">=0.42.*"
-uvicorn = ">=0.10.*"
-peewee = "*"
-python-multipart = "*"
+fastapi = "*"
+uvicorn = "*"
 requests = "*"
+python-multipart = "*"
 
 [dev-packages]
 
